@@ -1,0 +1,73 @@
+body{
+  background-image: linear-gradient(to right,blue,violet);
+  animation-name: backgroundChanges;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+.clock{
+position: absolute;
+left: 50%;
+top: 70%;
+transform: translateX(-50%) translateY(-50%);
+font-size: 90px;
+color: #ffffff;
+
+}
+
+
+#clocktab{
+display: inline-block;
+border: 2px solid #ffffff;
+height: 160px;
+width: 160px;
+text-align: center;
+line-height: 160px;
+vertical-align: middle;
+font-weight: bold;
+border-radius: 10px;
+box-shadow: 8px 8px 10px white;
+}
+
+.dateclock{
+  position: absolute;
+  left: 50%;
+  top:30%;
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 90px;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  height: 160px;
+  width: 740px;
+  text-align: center;
+  line-height: 160px;
+  vertical-align: middle;
+  font-weight: bold;
+  border-radius: 10px;
+  box-shadow: 8px 8px 10px white;
+
+}
+
+.weekDay{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 50px;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  height: 80px;
+  width: 740px;
+  text-align: center;
+  line-height: 80px;
+  vertical-align: middle;
+  font-weight: bold;
+  border-radius: 10px;
+  box-shadow: 8px 8px 10px white;
+
+}
+
+@keyframes backgroundChanges {
+  to {background-image: linear-gradient(to right,blue,violet);}
+  from {background-image: linear-gradient(to right,violet,blue);}
+}
